@@ -1,0 +1,22 @@
+{
+	"data": {
+		"polaris": {
+			"application": {
+				"name": "ALB-yaml-test"
+			},
+			"project": {
+				"name": "ALB-python-yaml-bridge-CLI"
+			},
+			"assessment": {
+				"types":  ["SAST"]
+
+			},
+			"serverUrl": "https://poc.polaris.synopsys.com"
+		},	
+        "tool": {
+			"install": {
+				"directory": "C:\\altair-tests\\synopsys-bridge"
+			}
+		}		
+	}
+}
