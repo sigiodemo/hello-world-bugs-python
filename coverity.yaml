@@ -1,0 +1,22 @@
+# Coverity configuration file.
+# The schema is available here: <install-dir>/doc/configuration-schema.json
+
+#capture:
+#  build:
+#    build-command: "msbuild hello-world-bugs.sln /t:Build"
+#    clean-command: "msbuild hello-world-bugs.sln /t:Clean"
+
+analyze:
+  checkers:
+    all: false
+    audit: false
+    android-security: false
+    brakeman: false
+    default: false
+    codexm:
+      - python-test.cxm
+
+    checker-config:
+      BAD_CERT_VERIFICATION:
+        enabled: true
+  cov-analyze-args: [ --disable-webapp-security ]
