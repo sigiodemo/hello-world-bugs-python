@@ -8,15 +8,17 @@
 
 analyze:
   checkers:
-    all: false
-    audit: false
-    android-security: false
-    brakeman: false
-    default: false
-    codexm:
-      - python-test.cxm
+    all: true
+    audit: true
+    android-security: true
+    default: true
+    webapp-security:
+      aggressiveness-level: low
 
-    checker-config:
-      BAD_CERT_VERIFICATION:
-        enabled: true
-  cov-analyze-args: [ --disable-webapp-security ]
+#    codexm:
+#      - python-test.cxm
+
+#    checker-config:
+#      BAD_CERT_VERIFICATION:
+#        enabled: true
+#  cov-analyze-args: [ --disable-webapp-security ]
