@@ -8,6 +8,11 @@ def Test():
     http = httplib.HTTP(host='host', port='port', strict='strict')
     http.putheader(taint)
 
+i = 1
+while i < 6:
+    print(i)
+    i -= 1
+
 response = requests.get('https://gmail.com', verify=False) # BAD_CERT_VERIFICATION defect here
 
 name = input("What is your name?\n")
