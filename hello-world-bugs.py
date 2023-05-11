@@ -3,15 +3,10 @@
 import requests
 import httplib
 
-def Test():
-    taint = requests.get('example.com').text
-    http = httplib.HTTP(host='host', port='port', strict='strict')
-    http.putheader(taint)
-
-i = 1
-while i < 6:
-    print(i)
-    i -= 1
+#def Test():
+#    taint = requests.get('example.com').text
+#    http = httplib.HTTP(host='host', port='port', strict='strict')
+#    http.putheader(taint)
 
 response = requests.get('https://gmail.com', verify=False) # BAD_CERT_VERIFICATION defect here
 
