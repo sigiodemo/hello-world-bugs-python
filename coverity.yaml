@@ -8,17 +8,18 @@
 
 analyze:
   checkers:
-    all: true
-    audit: true
-    android-security: true
-    default: true
+    all: false
+    audit: false
+    android-security: false
+    default: false
     webapp-security:
-      aggressiveness-level: low
+      enabled: false
+#      aggressiveness-level: low
 
-#    codexm:
-#      - python-test.cxm
+    codexm:
+      - python-test.cxm
 
-#    checker-config:
-#      BAD_CERT_VERIFICATION:
-#        enabled: true
+    checker-config:
+      BAD_CERT_VERIFICATION:
+        enabled: true
 #  cov-analyze-args: [ --disable-webapp-security ]
