@@ -18,7 +18,7 @@ jobs:
       - name: Synopsys Action
         uses: synopsys-sig/synopsys-action@v1.9.0
         with:
-          polaris_serverUrl: ${{ secrets.POLARIS_SERVER_URL }}
+          polaris_serverUrl: ${{ vars.POLARIS_SERVER_URL }}
           polaris_accessToken: ${{ secrets.POLARIS_ACCESS_TOKEN }}
           polaris_application_name: "ALB-yaml-test"
           polaris_project_name: "ALB-python-yaml-bridge-CLI"
